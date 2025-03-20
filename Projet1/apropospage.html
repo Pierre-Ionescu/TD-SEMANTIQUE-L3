@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Lucas Jardins</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="logo">
+            <img src="asset/icon/logo-removebg-preview.png" alt="Logo de Lucas Jardins">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="TEST.HTML">Accueil</a></li>
+                <li><a href="#boxservice">Nos Services</a></li>
+                <li><a href="apropospage.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section À Propos -->
+    <section id="a-propos" class="about-section fade-in">
+        <div class="container">
+            <div class="about-text">
+                <h1>Qui sommes-nous ?</h1>
+                <p>Depuis plus de 25 ans, Lucas Jardins est spécialisé dans l'aménagement, la création et l'entretien d'espaces verts.</p>
+                <p>Notre équipe est composée de professionnels passionnés, avec un savoir-faire qui garantit la réussite de tous vos projets.</p>
+            </div>
+            <div class="about-image">
+                <img src="asset/images/footerimg.jpeg" alt="Lucas Jardins équipe">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Notre Histoire -->
+    <section id="notre-histoire" class="history-section slide-in">
+        <div class="container">
+            <div class="history-image">
+                <img src="asset/images/homejardin2.jpeg" alt="Notre histoire">
+            </div>
+            <div class="history-text">
+                <h2>Notre Histoire</h2>
+                <p>Fondée en <strong>2001</strong>, Lucas Jardins a commencé comme une petite entreprise familiale dédiée à l’aménagement paysager.</p>
+                <a href="contact.html" class="btn">Nous Contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nos Valeurs -->
+    <section id="nos-valeurs" class="values-section fade-in">
+        <div class="container">
+            <h2>Nos Valeurs & Engagements</h2>
+            <div class="values-grid">
+                <div class="value-item hover-shadow">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Respect de l’Environnement</h3>
+                    <p>Nous privilégions des techniques respectueuses de la biodiversité.</p>
+                </div>
+                <div class="value-item hover-shadow">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Proximité & Écoute</h3>
+                    <p>Chaque projet est unique, c'est pourquoi nous prenons le temps d’écouter vos attentes.</p>
+                </div>
+                <div class="value-item hover-shadow">
+                    <i class="fas fa-award"></i>
+                    <h3>Excellence & Qualité</h3>
+                    <p>Nos équipes qualifiées garantissent un travail soigné et précis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 Lucas Jardins. Réalisation Agence AMS.</p>
+    </footer>
+
+    <!-- Animation JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".fade-in, .slide-in");
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(element => observer.observe(element));
+        });
+    </script>
+</body>
+</html>

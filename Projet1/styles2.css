@@ -1,0 +1,533 @@
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4A7856;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 90px;
+}
+
+/* Menu de navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+/* Section d'accueil */
+.hero {
+    background-image: url('asset/images/homejardin2.jpeg');
+    background-size: 100%;
+    background-position: 100%;
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#a-propos h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#a-propos p {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+
+/* Sections */
+section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Section Services */
+#services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+/* Conteneur de services */
+#boxservice {
+    max-width: 800px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* SECTION SERVICES */
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 5%;
+    background: #ffffff;
+    margin-bottom: 60px; /* Ajout d'espace en bas */
+}
+
+/* Conteneur des services */
+#boxservice {
+    width: 100%;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #6eaf7f, #4b8f77);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombre plus subtile */
+}
+
+/* Titre stylisé */
+#boxservice h2, #avis-clients h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Liste des services */
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Styles des services */
+.service {
+    background: #fff;
+    padding: 20px;
+    border-radius: 13px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+}
+
+/* Effet au survol */
+.service:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    background: #eef7ff;
+}
+
+/* Image de fond au survol */
+.service::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 0;
+    filter: brightness(0.7);
+}
+
+.service:hover::before {
+    opacity: 0.7;
+}
+
+/* Positionner le texte au-dessus */
+.service h3, .service a {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: #222;
+    font-size: 1.2rem;
+}
+
+/* Ajout des images de fond pour chaque service */
+.service1::before { background-image: url('asset/images/jardinmachine.jpeg'); }
+.service2::before { background-image: url('asset/images/arrosage.jpeg'); }
+.service3::before { background-image: url('asset/images/plantation.jpeg'); }
+.service4::before { background-image: url('asset/images/elagage.jpeg'); }
+.service5::before { background-image: url('asset/images/taillevegetation.jpeg'); }
+.service6::before { background-image: url('asset/images/debroussaillage.jpeg'); }
+
+/* Animation des services en bas */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* SECTION AVIS CLIENTS */
+#avis-clients {
+    text-align: center;
+    padding: 50px 5%;
+    background: #fff;
+}
+
+.avis-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Style des avis */
+.avis {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.avis:hover {
+    transform: scale(1.05);
+}
+
+/* Style des étoiles */
+.avis p:first-child {
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+
+/* Nom des clients */
+.avis span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #services {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    #boxservice {
+        padding: 20px;
+    }
+
+    .avis-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/*SECTION LIEU */
+
+/* SECTION LIEU D'ACTIVITÉ */
+#lieu-activite {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#lieu-activite h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #4A7856;
+}
+
+/* Conteneur des lieux d'activité */
+.lieu-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Cartes des villes */
+.lieux-carte {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Style des cartes */
+.carte {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 350px;  /* Ajuster la largeur des cartes */
+    height: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Animation sur hover pour les cartes */
+.carte:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Style de l'image */
+.carte-image {
+    width: 100%;
+    height: 200px; /* Hauteur fixe pour l'image */
+    object-fit: cover;
+}
+
+/* Texte par-dessus l'image */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+/* Détails de l'information (masqué par défaut) */
+.info-detail {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Lorsque la carte est cliquée, afficher les détails */
+.carte:focus-within .info-detail {
+    display: block;
+}
+
+
+
+
+
+/* CONTACT */
+
+
+
+/* Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url('asset/images/contact-bg.jpg') no-repeat center center/cover;
+    color: white;
+    position: relative;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+#contact address {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: left;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#contact address p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+#contact address a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.footer-contact address {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-contact a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+/* Réactivité */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Les éléments deviennent une colonne */
+        align-items: center; /* Centrer les éléments dans la colonne */
+        width: 100%; /* Le menu occupe toute la largeur */
+        margin-top: 1rem; /* Un peu d'espace au-dessus */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Espacement vertical entre les éléments */
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        width: 100%; /* Les liens prennent toute la largeur */
+        text-align: center; /* Centrer le texte des liens */
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        margin-bottom: 1rem;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+}
