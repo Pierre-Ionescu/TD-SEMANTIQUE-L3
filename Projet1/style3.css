@@ -21,46 +21,36 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #4A7856;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: fixed;
+    padding: 1rem;
+    position: relative;
     width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 2px solid #2C3E50; /* Ajout d'une bordure sous le header */
+    top: -80px;
 }
 
 .logo img {
-    width: 100px;
-    transition: transform 0.3s ease;
+    width: 90px;
 }
 
-.logo img:hover {
-    transform: scale(1.1);
-}
-
+/* Menu de navigation */
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
 }
 
 nav ul li {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-    font-weight: 600;
-    transition: background 0.3s, transform 0.2s;
-    border-radius: 5px;
+    padding: 0.5rem 1rem;
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
+    background-color: #555;
+    border-radius: 5px;
 }
 
 /* Section À Propos */
@@ -197,12 +187,43 @@ nav ul li a:hover {
 
 /* Pied de page */
 footer {
-    background-color: #2C3E50;
+    background-color: #333;
     color: #fff;
+    padding: 2rem 1rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    border-radius: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.footer-contact address {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-contact a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 /* Animation fade-in */
