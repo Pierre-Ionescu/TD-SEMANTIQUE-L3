@@ -1,0 +1,75 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Desveaux Alexis",
+    "alternateName": "Desveaux Alexis", 
+    "description": "Desveaux Alexis est un etudiant a l'université de Nice",
+    "birthdate": "2002-06-04",
+    "birthplace": {
+        "@type": "Place",
+        "name": "Nice, France",
+        "address": {
+            "@type": "PostalAddress", 
+            "addressLocality": "Nice",
+            "addressCountry": "France"
+        }
+    },
+    "réseaux_sociaux": {
+        "linkedin": "https://www.linkedin.com/in/alexis-desveaux-b2303b293/"
+      },
+    "nationality": "Francais",
+    "gender" : "male",
+    "heigh": "1.60m",
+    "jobtitle": "etudiant",
+    "sport": "Judo",
+    "hobbies": "judo,foot,boxe",
+    "contact": {
+      "email": "1stmg.desveaux@gmail.com"
+    },
+    "profession": ["judo","etudiant"],
+    "préférences": {
+      "loisirs": [
+        "kickboxing",
+        "Cinéma",
+        "jeux vidéo"
+      ],
+      "langues": [
+        "Français",
+        "Anglais",
+        "espagnol"
+      ]
+    },
+  
+"historique_professionnel": [
+  {
+    "entreprise": "leclerc",
+    "poste": "Vendeur et caissier",
+    "date_debut": "2022",
+    "description": "Gestion de la caisse et remise en rayon"
+  }
+
+],
+
+"certifications": [
+  {
+    "certificat": "Baccalauréat général et technologique",
+    "organisme": "Lycée",
+    "date_obtention": "2020"
+  }
+],
+
+"formation": [
+  {
+    "établissement": "Université de Nice",
+    "diplôme": "Licence information communication",
+    "date_obtention": "2025"
+  }
+
+]
+
+}
+
+
+
+
+
