@@ -1,0 +1,75 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "IONESCU Pierre", 
+    "description": "Pierre IONESCU est un étudiant en licence d'information communication à la faculté de Nice",
+    "birthdate": "2004-03-05",
+    "birthplace": {
+        "@type": "Place",
+        "name": "Nice, France",
+        "address": {
+            "@type": "PostalAddress", 
+            "addressLocality": "Nice",
+            "addressCountry": "FR"
+        }
+    },
+    "nationality": "Francais",
+    "gender" : "male",
+    "heigh": "1.73m",
+    "jobtitle": "étudiant",
+    "sport": "Aucun",
+    "hobbies": "Musique, Jeux vidéos et Cinéma",
+    "contact": {
+      "email": "pierre.ionescou@gmail.com"
+    },
+    "profession": ["etudiant"],
+    "préférences": {
+      "loisirs": [
+        "Jeux-vidéo",
+        "Cinéma et série",
+        "Musique",
+        "Concerts"
+      ],
+      "langues": [
+        "Français",
+        "Anglais"
+      ],
+      "musique": "Nu métal, rock, pop-rock"
+    },
+    "réseaux_sociaux": {
+      "linkedin": "https://www.linkedin.com/in/pierre-ionescou-713807314/",
+      "instagram": "https://www.instagram.com/pierre.ins/",
+      "facebook": "https://www.facebook.com/pierre.ionescu.9"
+    },
+  
+"certifications": [
+  {
+    "certificat": "Baccalauréat général, option HLP - SES",
+    "organisme": "Lycée",
+    "date_obtention": "2022"
+  }
+],
+
+"formation": [
+  {
+    "établissement": "Université de Nice",
+    "diplôme": "Information-Communication : Organisation et Stratégie Numérique",
+    "date_obtention": "2025"
+  }
+
+],
+
+"voyages": {
+  "pays_visités": [
+    "France",
+    "Roumanie",
+    "Grèce",
+    "Italie",
+    "Turquie",
+    "Tunisie"
+
+  ],
+  "destination_rêvée": "Japon"
+}
+
+}
