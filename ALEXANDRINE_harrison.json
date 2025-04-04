@@ -1,42 +1,41 @@
 {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Desveaux Alexis",
-    "alternateName": "Desveaux Alexis", 
-    "description": "Desveaux Alexis est un etudiant a l'université de Nice",
-    "birthdate": "2002-06-04",
+    "name": "Alexandrine Harrison",
+    "alternateName": "Alexandrine Harrison", 
+    "description": "Alexandrine Harrison est un etudiant a l'université de Nice. Il est également producteur de musique.",
+    "birthdate": "2002-12-10",
     "birthplace": {
         "@type": "Place",
-        "name": "Nice, France",
+        "name": "Saint-Maur, France",
         "address": {
             "@type": "PostalAddress", 
-            "addressLocality": "Nice",
+            "addressLocality": "Saint-Maur",
             "addressCountry": "France"
         }
     },
     "nationality": "Francais",
     "gender" : "male",
-    "heigh": "1.60m",
-    "jobtitle": "etudiant",
-    "sport": "Judo",
-    "hobbies": "judo,foot,boxe",
+    "heigh": "1.71m",
+    "jobtitle": "etudiant, producteur",
+    "sport": "basket-ball",
+    "hobbies": "musique,chant,mix audio",
     "contact": {
-      "email": "1stmg.desveaux@gmail.com"
+      "email": "harryalexpro@gmail.com"
     },
-    "profession": ["judo","etudiant"],
+    "profession": ["producteur de musique","etudiant"],
     "préférences": {
       "loisirs": [
-        "kickboxing",
-        "Voyages",
+        "basket-ball",
+        "football",
         "Cinéma",
-        "jeux vidéo"
+        "voyager"
       ],
       "langues": [
         "Français",
-        "Anglais",
-        "espagnol"
+        "Anglais"
       ],
-      "musique": "r&b"
+      "musique": "r&b, afro"
     },
     "réseaux_sociaux": {
       "linkedin": "https://www.linkedin.com/in/harrison-alexandrine-317555217/"
