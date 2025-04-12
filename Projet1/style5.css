@@ -1,0 +1,131 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4A7856;
+    padding: 1rem;
+}
+
+header .logo img {
+    width: 90px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* FAQ Section */
+#faq {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h2 {
+    font-size: 2rem;
+    color: #4A7856;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #eef7ee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    background-color: #d4ebd4;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+}
+
+.faq-answer {
+    display: none; /* Masqué par défaut */
+}
+
+/* Active FAQ Item */
+.faq-item.active .faq-answer {
+    display: block; /* Affiche la réponse */
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.footer-contact address {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-contact a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
